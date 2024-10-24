@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Simple HTML Page</h1>
+    </header>
+    
+    <main>
+        <h2>About This Page</h2>
+        <p>This is a basic HTML page with some simple styling. It demonstrates the structure of an HTML document and includes a few common elements.</p>
+        
+        <h2>Features</h2>
+        <ul>
+            <li>Responsive design</li>
+            <li>Simple CSS styling</li>
+            <li>Semantic HTML5 elements</li>
+        </ul>
+
+        <!-- Add a button here -->
+        <button id="trackButton">Click Me!</button>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 My Simple HTML Page. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to track button clicks
+        document.getElementById('trackButton').addEventListener('click', function() {
+            alert('Button Clicked!');
+            console.log('Button was clicked!');
+        });
+    </script>
+</body>
+</html>
