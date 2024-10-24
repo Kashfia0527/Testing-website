@@ -63,10 +63,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </footer>
 
     <script>
-        // JavaScript to track button clicks
-        document.getElementById('trackButton').addEventListener('click', function() {
-            alert('Button Clicked!');
-            console.log('Button was clicked!');
+    
+    // JavaScript to track button clicks
+    document.getElementById('trackButton').addEventListener('click', function() {
+        alert('Button Clicked!');
+        console.log('Button was clicked!');
+
+        // Push the event to the GTM data layer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'buttonClick',  // This is the event name you can use in GTM
+            'buttonName': 'Click Me!' // You can add more data if needed
+        });
+
+</script>
+
         });
     </script>
 </body>
